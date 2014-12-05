@@ -1,0 +1,24 @@
+﻿body {
+    background-image:url('/images/bg-body-pattern.png');
+    background-color:#eee;
+}
+
+.stan-title-link {
+    font-size:20px;
+}
+
+.njuskalo-hunter-table th {
+        font-size:20px;
+        font-weight:bold;
+        text-transform:uppercase;
+}
+
+.numeracija {
+    font-size:20px;
+}
+
+.cijena {
+    font-size:30px;
+    font-weight:bold;
+    color:#30ad9e;
+}
