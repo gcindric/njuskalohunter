@@ -1,24 +1,50 @@
 ﻿body {
-    background-image:url('/images/bg-body-pattern.png');
-    background-color:#eee;
+    background-image: url('/images/bg-body-pattern.png');
+    background-color: #eee;
+}
+
+h1 {
+    margin-top: 13px;
+}
+
+::-webkit-input-placeholder {
+    color: #dbdbdb;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #dbdbdb;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #dbdbdb;
+}
+
+:-ms-input-placeholder {
+    color: #dbdbdb;
 }
 
 .stan-title-link {
-    font-size:20px;
+    font-size: 20px;
 }
 
 .njuskalo-hunter-table th {
-        font-size:20px;
-        font-weight:bold;
-        text-transform:uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .numeracija {
-    font-size:20px;
+    font-size: 20px;
+}
+
+.author-info {
+    font-size: 13px;
+    float: right;
+    margin: 0 5px 0 0;
 }
 
 .cijena {
-    font-size:30px;
-    font-weight:bold;
-    color:#30ad9e;
+    font-size: 23px;
+    font-weight: bold;
+    color: #30ad9e;
 }

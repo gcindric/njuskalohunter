@@ -31,6 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="server.js" />
+    <Compile Include="views\home.hbs.js" />
+    <Compile Include="views\layouts\main.hbs.js" />
+    <Compile Include="views\oglasi.hbs.js" />
     <Content Include="images\bg-body-pattern.png" />
     <Content Include="package.json" />
     <Content Include="README.md" />

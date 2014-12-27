@@ -1,33 +1,29 @@
-﻿<div class="container">
-    <div class="row">
-        <div class="col-md-12 column">
-            <div class="well">
-                    <h1>Stranica s oglasima</h1>
-            </div>                
-                <div class="well">
-                    <div class="table-responsive">
-                        <table class="table table-striped njuskalo-hunter-table">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Slika</th>
-                                    <th>Naziv</th>
-                                    <th>Cijena</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {{#each oglasi}}
-                                <tr>
-                                    <td class="numeracija">{{ rednibroj }}</td>
-                                    <td><img src="{{ slika }}" /></td>
-                                    <td><strong><a class="stan-title-link" href="http://www.njuskalo.hr/{{ detaljiurl }}" target="_blank">{{ naziv }}</a></strong></td>
-                                    <td class="cijena">{{ cijena }}</td>
-                                </tr>
-                                {{/each}}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-        </div>
+﻿<div class="row well">
+    <div class="col-md-12 column">
+        <h1>Stranica s oglasima</h1>
+    </div>
+</div>
+<div class="row well">
+    <div class="table-responsive">
+        <table class="table table-striped njuskalo-hunter-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Slika</th>
+                    <th>Naziv</th>
+                    <th>Cijena</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each oglasi}}
+                <tr>
+                    <td class="numeracija">{{ rednibroj }}</td>
+                    <td><img src="{{ slika }}" /></td>
+                    <td><strong><a class="stan-title-link" href="http://www.njuskalo.hr/{{ detaljiurl }}" target="_blank">{{ naziv }}</a></strong></td>
+                    <td class="cijena">{{ cijena }}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
     </div>
 </div>
