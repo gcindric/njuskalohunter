@@ -72,13 +72,13 @@ request({
 
     //find all "oglasi" with todays date// 
     var rednibroj = 0;
-    $("article.entity-item-data:contains('" + today + "')").each(function () {
+    $("article.entity-body:contains('" + today + "')").each(function () {
         var $i = $(this);
         
         var n = $i.find("h3.entity-title").text().trim();
         var s = $i.find('img').attr('data-src').replace('//', 'http://').trim();
         var c = $i.find("li.price-item").eq(0).text().trim();
-        var detaljiurl = $i.find("article.entity-item-data a").attr("href");
+        var detaljiurl = $i.find("article.entity-body a").attr("href");
                 
         rednibroj++;
         oglasi.push(new OglasViewModel(rednibroj, n, s, c, detaljiurl));
